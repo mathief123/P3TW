@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/css" href="examen.css"?>
+<cuestionario>
+
+    <!--Pregunta numerica-->
+    <pregunta tipo="num">
+        <enunciado>Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
+
+    </pregunta>
+
+    <pregunta tipo="num">
+        <enunciado>Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--Respuesta: 1-->
+    </pregunta>
+
+    <pregunta tipo="num">
+        <enunciado>Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--Respuesta: 7(Doctype, abrir y cerrar html, body y head)-->
+    </pregunta>
+
+    <!--Pregunta libre-->
+
+    <pregunta tipo="libre">
+        <enunciado>Como defines una imagen en un documento xhtml?</enunciado><!--<img></img>-->
+    </pregunta>
+
+    <pregunta tipo="libre">
+        <enunciado>Cuales son los tres tipos de xhtml que hay</enunciado><!--Strict, transitional, frameset-->
+    </pregunta>
+
+    <pregunta tipo="libre">
+        <enunciado>Nombra 3 tipos de selectores en css</enunciado><!--Etiquetas, clase, id-->
+    </pregunta>
+
+    <!--Pregunta test-->
+
+    <pregunta tipo="test">
+        <enunciado>Que significa CSS?</enunciado>
+            <opcion> Creative Style Sheets</opcion>
+            <opcion>Cascading Style Sheets</opcion>
+            <opcion>Computer Style Sheets</opcion>
+            <opcion>Colorful Style Sheets</opcion>
+    </pregunta>
+
+    <pregunta tipo="test">
+        <enunciado>Dentro de que elemento html ponemos el JS?</enunciado>
+            <opcion> &lt;javascript&gt;</opcion>
+            <opcion>&lt;scripting&gt;</opcion>
+            <opcion>&lt;script&gt;</opcion>
+            <opcion>&lt;js&gt;</opcion>
+    </pregunta>
+
+    <pregunta tipo="test">
+        <enunciado>Que significa HTML?</enunciado>
+            <opcion> Home Tool Markup Language</opcion>
+            <opcion>Hyperlinks and Text Markup Language</opcion>
+            <opcion>Hyper Text Markup Language</opcion>
+            <opcion>Hyperlinks Tool Markup Language </opcion>
+
+    </pregunta>
+
+    <!--Pregunta booleana-->
+
+    <pregunta tipo="bool">
+        <enunciado>Un enlace a la pagina index.html se define con &lt;a href="index.html>&lt;/a></enunciado><!--Etiquetas, clase, id-->
+    </pregunta>
+
+    <pregunta tipo="bool">
+
+    </pregunta>
+
+    <pregunta tipo="bool">
+
+    </pregunta>
+
+<!--Pregunta ordenar-->
+
+
+    <pregunta>
+
+    </pregunta>
+
+    <pregunta>
+
+    </pregunta>
+
+    <pregunta>
+
+    </pregunta>
+
+</cuestionario>

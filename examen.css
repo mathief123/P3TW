@@ -1,0 +1,29 @@
+enunciado {
+    font-family: Verdana;
+    font-size: 13 px;
+    color: Black;
+}
+
+opcion {
+    font-family: Verdana;
+    font-size: 13 px;
+    color: Black;
+}
+
+idpregunta {
+    font-family: Verdana;
+    font-size: 13 px;
+    color: Blue;
+}
+
+autor {
+    font-family: Times New Roman;
+    font-size: 12 px;
+    color: #000080;
+}
+
+fecha {
+    font-family: Times New Roman;
+    font-size: 12 px;
+    color: #003399;
+}
