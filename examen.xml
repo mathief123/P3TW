@@ -3,36 +3,36 @@
 <cuestionario>
 
     <!--Pregunta numerica-->
-    <pregunta tipo="num">
+    <pregunta tipo="num" tema="2">
         <enunciado>Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
 
     </pregunta>
 
-    <pregunta tipo="num">
+    <pregunta tipo="num" tema="2">
         <enunciado>Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--Respuesta: 1-->
     </pregunta>
 
-    <pregunta tipo="num">
+    <pregunta tipo="num" tema="2">
         <enunciado>Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--Respuesta: 7(Doctype, abrir y cerrar html, body y head)-->
     </pregunta>
 
     <!--Pregunta libre-->
 
-    <pregunta tipo="libre">
+    <pregunta tipo="libre" tema="4">
         <enunciado>Como defines una imagen en un documento xhtml?</enunciado><!--<img></img>-->
     </pregunta>
 
-    <pregunta tipo="libre">
+    <pregunta tipo="libre" tema="4">
         <enunciado>Cuales son los tres tipos de xhtml que hay</enunciado><!--Strict, transitional, frameset-->
     </pregunta>
 
-    <pregunta tipo="libre">
+    <pregunta tipo="libre" tema="3">
         <enunciado>Nombra 3 tipos de selectores en css</enunciado><!--Etiquetas, clase, id-->
     </pregunta>
 
     <!--Pregunta test-->
 
-    <pregunta tipo="test">
+    <pregunta tipo="test" tema="3">
         <enunciado>Que significa CSS?</enunciado>
             <opcion> Creative Style Sheets</opcion>
             <opcion>Cascading Style Sheets</opcion>
@@ -40,7 +40,7 @@
             <opcion>Colorful Style Sheets</opcion>
     </pregunta>
 
-    <pregunta tipo="test">
+    <pregunta tipo="test" tema="5">
         <enunciado>Dentro de que elemento html ponemos el JS?</enunciado>
             <opcion> &lt;javascript&gt;</opcion>
             <opcion>&lt;scripting&gt;</opcion>
@@ -48,7 +48,7 @@
             <opcion>&lt;js&gt;</opcion>
     </pregunta>
 
-    <pregunta tipo="test">
+    <pregunta tipo="test" tema="2">
         <enunciado>Que significa HTML?</enunciado>
             <opcion> Home Tool Markup Language</opcion>
             <opcion>Hyperlinks and Text Markup Language</opcion>
@@ -59,30 +59,30 @@
 
     <!--Pregunta booleana-->
 
-    <pregunta tipo="bool">
+    <pregunta tipo="bool" tema="2">
         <enunciado>Un enlace a la pagina index.html se define con &lt;a href="index.html>&lt;/a></enunciado><!--Etiquetas, clase, id-->
     </pregunta>
 
-    <pregunta tipo="bool">
-
+    <pregunta tipo="bool" tema="2">
+        <enunciado>Un documento html se puede enlazar solo con un docunento css </enunciado>
     </pregunta>
 
-    <pregunta tipo="bool">
-
+    <pregunta tipo="bool" tema="1">
+        <enunciado>Clientes: dispositivos que ejecutan un software denominado navegador(browser) de WWW </enunciado>
     </pregunta>
 
 <!--Pregunta ordenar-->
 
 
-    <pregunta>
+    <pregunta tipo="ordenar">
+        <enunciado></
+    </pregunta>
+
+    <pregunta tipo="ordenar">
 
     </pregunta>
 
-    <pregunta>
-
-    </pregunta>
-
-    <pregunta>
+    <pregunta tipo="ordenar">
 
     </pregunta>
 
