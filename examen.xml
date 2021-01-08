@@ -74,16 +74,25 @@
 <!--Pregunta ordenar-->
 
 
-    <pregunta tipo="ordenar">
-        <enunciado></
+    <pregunta tipo="ordenar" tema="2">
+        <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
+        <opcion> &lt;html&gt;</opcion>
+        <opcion>&lt;head&gt;</opcion>
+        <opcion>&lt;body&gt;</opcion>
     </pregunta>
 
     <pregunta tipo="ordenar">
-
+        <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
+        <opcion> Saab</opcion>
+        <opcion>Volvo</opcion>
+        <opcion>BMW</opcion>
     </pregunta>
 
     <pregunta tipo="ordenar">
-
+        <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
+        <opcion> &lt;html&gt;</opcion>
+        <opcion>&lt;head&gt;</opcion>
+        <opcion>&lt;body&gt;</opcion>
     </pregunta>
 
 </cuestionario>
