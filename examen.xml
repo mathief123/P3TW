@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <?xml-stylesheet type="text/css" href="examen.css"?>
-<cuestionario>
+<!DOCTYPE gramatica PUBLIC "gramatica.dtd">
+<examen>
 
     <!--Pregunta numerica-->
     <pregunta tipo="num" tema="2">
         <enunciado>Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
-
+        <respuesta acept="num"></respuesta>
     </pregunta>
 
     <pregunta tipo="num" tema="2">
         <enunciado>Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--Respuesta: 1-->
+        <respuesta acept="num"></respuesta>
     </pregunta>
 
     <pregunta tipo="num" tema="2">
         <enunciado>Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--Respuesta: 7(Doctype, abrir y cerrar html, body y head)-->
+        <respuesta acept="num"></respuesta>
     </pregunta>
 
     <!--Pregunta libre-->
 
     <pregunta tipo="libre" tema="4">
         <enunciado>Como defines una imagen en un documento xhtml?</enunciado><!--<img></img>-->
+        <respuesta acept="libre"></respuesta>
     </pregunta>
 
     <pregunta tipo="libre" tema="4">
         <enunciado>Cuales son los tres tipos de xhtml que hay</enunciado><!--Strict, transitional, frameset-->
+        <respuesta acept="libre"></respuesta>
     </pregunta>
 
     <pregunta tipo="libre" tema="3">
         <enunciado>Nombra 3 tipos de selectores en css</enunciado><!--Etiquetas, clase, id-->
+        <respuesta acept="libre"></respuesta>
     </pregunta>
 
     <!--Pregunta test-->
@@ -95,4 +101,4 @@
         <opcion>&lt;body&gt;</opcion>
     </pregunta>
 
-</cuestionario>
+</examen>
