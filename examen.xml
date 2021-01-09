@@ -38,43 +38,43 @@
 
     <!--Pregunta test-->
 
-    <pregunta tipo="test" tema="3">
+    <pregunta tipo="testU" tema="3">
         <enunciado>¿Que significa CSS?</enunciado>
             <opcion> Creative Style Sheets</opcion>
-            <opcion>Cascading Style Sheets</opcion>
+            <opcion tipo="correcta">Cascading Style Sheets</opcion>
             <opcion>Computer Style Sheets</opcion>
             <opcion>Colorful Style Sheets</opcion>
     </pregunta>
 
-    <pregunta tipo="test" tema="5">
+    <pregunta tipo="testU" tema="5">
         <enunciado>¿Dentro de que elemento html ponemos el JS?</enunciado>
             <opcion> &lt;javascript&gt;</opcion>
             <opcion>&lt;scripting&gt;</opcion>
-            <opcion>&lt;script&gt;</opcion>
+            <opcion tipo="correcta">&lt;script&gt;</opcion>
             <opcion>&lt;js&gt;</opcion>
     </pregunta>
-
-    <pregunta tipo="test" tema="2">
-        <enunciado>¿Que significa HTML?</enunciado>
-            <opcion> Home Tool Markup Language</opcion>
-            <opcion>Hyperlinks and Text Markup Language</opcion>
-            <opcion>Hyper Text Markup Language</opcion>
-            <opcion>Hyperlinks Tool Markup Language </opcion>
+            
+    <pregunta tipo="testM" tema="6">
+        <enunciado>Indica cual de estos atributos son validos en html5</enunciado>
+            <opcion> &lt;a/&gt;</opcion>
+            <opcion tipo="correcta">href</opcion>
+            <opcion>referencia</opcion>
+            <opcion tipo="correcta">src</opcion>
 
     </pregunta>
 
     <!--Pregunta booleana-->
 
-    <pregunta tipo="bool" tema="2">
+    <pregunta tipo="boolY" tema="2">
         <enunciado>¿Un enlace a la pagina index.html se define con &lt;a href="index.html>&lt;/a>?</enunciado><!--Etiquetas, clase, id-->
     </pregunta>
 
-    <pregunta tipo="bool" tema="2">
+    <pregunta tipo="boolN" tema="2">
         <enunciado>¿Un documento html se puede enlazar solo con un docunento css?</enunciado>
     </pregunta>
 
-    <pregunta tipo="bool" tema="1">
-        <enunciado>¿Clientes: dispositivos que ejecutan un software denominado navegador(browser) de WWW ?</enunciado>
+    <pregunta tipo="boolY" tema="1">
+        <enunciado>¿Es correcto decir que los clientes son dispositivos que ejecutan un software denominado navegador(browser) de WWW?</enunciado>
     </pregunta>
 
 <!--Pregunta ordenar-->
@@ -82,15 +82,15 @@
 
     <pregunta tipo="ordenar" tema="2">
         <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
-        <opcion> &lt;html&gt;</opcion>
-        <opcion>&lt;head&gt;</opcion>
-        <opcion>&lt;body&gt;</opcion>
+        <opcion orden='1'> &lt;html&gt;</opcion>
+        <opcion orden='2'>&lt;head&gt;</opcion>
+        <opcion orden='3'>&lt;body&gt;</opcion>
     </pregunta>
 
     <pregunta tipo="ordenar" tema="5">
         <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
-        <opcion> Saab</opcion>
-        <opcion>Volvo</opcion>
-        <opcion>BMW</opcion>
+        <opcion orden='1'> Saab</opcion>
+        <opcion orden='2'>Volvo</opcion>
+        <opcion orden='3'>BMW</opcion>
     </pregunta>
 </examen>
