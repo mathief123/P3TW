@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="examen.css"?>
-<!DOCTYPE gramatica SYSTEM "gramatica.dtd">
+<!DOCTYPE examen SYSTEM "gramatica.dtd">
 <examen>
 
     <!--Pregunta numerica-->
@@ -87,18 +87,10 @@
         <opcion>&lt;body&gt;</opcion>
     </pregunta>
 
-    <pregunta tipo="ordenar">
+    <pregunta tipo="ordenar" tema="5">
         <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
         <opcion> Saab</opcion>
         <opcion>Volvo</opcion>
         <opcion>BMW</opcion>
     </pregunta>
-
-    <pregunta tipo="ordenar">
-        <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
-        <opcion> &lt;html&gt;</opcion>
-        <opcion>&lt;head&gt;</opcion>
-        <opcion>&lt;body&gt;</opcion>
-    </pregunta>
-
 </examen>
