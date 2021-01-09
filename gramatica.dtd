@@ -3,12 +3,14 @@
 
 <!ELEMENT enunciado (#PCDATA)>
 <!ELEMENT opcion (#PCDATA)>
-<!ELEMENT respuestaNum ( #PCDATA)><!--1|2|3|4|5|6|7|8|9|0-->
+<!ELEMENT respuestaNum (#PCDATA)><!--1|2|3|4|5|6|7|8|9|0-->
 <!ELEMENT respuesta (#PCDATA)>
 <!-- -->
 <!ATTLIST pregunta tipo (num|bool|test|ordenar|libre) "libre">
 <!ATTLIST pregunta tema (1|2|3|4|5|6) #REQUIRED>
 <!ATTLIST opcion tipo (correcta|incorrecta)  "incorrecta">
 <!ATTLIST respuesta acept (libre|num)  "libre">
+<!ATTLIST respuesta minimo (1|2|3|4|5|6|7|8|9|0) '0'>
+<!ATTLIST respuesta maximo (1|2|3|4|5|6|7|8|9|0) '0'>
 
 <!ENTITY autores "Mateo Fecci / Frean Quiles">
