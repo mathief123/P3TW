@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <?xml-stylesheet type="text/css" href="examen.css"?>
-<!DOCTYPE gramatica PUBLIC "gramatica.dtd">
+<!DOCTYPE gramatica SYSTEM "gramatica.dtd">
 <examen>
 
     <!--Pregunta numerica-->
