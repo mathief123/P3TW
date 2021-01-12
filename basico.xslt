@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
   <html>
   <body>
-    <h2>My CD Collection</h2>
+    <h2>Examen tocho</h2>
 
       </tr>
       <xsl:for-each select="examen/pregunta">
@@ -12,37 +12,37 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <table border="1">
             
             <xsl:choose>
-                <xsl:when test="@tema = 1">
+                <xsl:when test='@tema = "1"'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
                         <td bgcolor="#fa00ff"><xsl:value-of select="@tema"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tema = 2">
+                <xsl:when test='@tema = "2"'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
                         <td bgcolor="#fp00ff"><xsl:value-of select="@tema"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tema = 3">
+                <xsl:when test='@tema = "3"'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
                         <td bgcolor="#ff58ff"><xsl:value-of select="@tema"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tema = 4">
+                <xsl:when test='@tema = "4'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
                         <td bgcolor="#ffeeff"><xsl:value-of select="@tema"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tema = 5">
+                <xsl:when test='@tema = "5"'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
                         <td bgcolor="#ffgggg"><xsl:value-of select="@tema"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tema = 6">
+                <xsl:when test='@tema = "6"'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
                         <td bgcolor="#ffasdf"><xsl:value-of select="@tema"/></td>
@@ -50,17 +50,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 </xsl:when>
             </xsl:choose>
             <xsl:choose>
-                <xsl:when test="@tipo = num">
+                <xsl:when test='@tipo = "num"'>
                     <tr>
                         <td><xsl:value-of select="respuesta"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tipo = libre">
+                <xsl:when test='@tipo = "libre"'>
                     <tr>
                         <td><xsl:value-of select="respuesta"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tipo = testU">
+                <xsl:when test='@tipo = "testU"'>
                     <tr>
                         <td><xsl:value-of select="opcion"/></td>
                     </tr>
@@ -74,7 +74,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td><xsl:value-of select="opcion"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tipo = testM">
+                <xsl:when test='@tipo = "testM"'>
                     <tr>
                         <td><xsl:value-of select="opcion"/></td>
                     </tr>
@@ -88,17 +88,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td><xsl:value-of select="opcion"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tipo = boolY">
+                <xsl:when test='@tipo = "boolY"'>
                     <tr>
                         <td></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tipo = boolN">
+                <xsl:when test='@tipo = "boolN"'>
                     <tr>
                         <td></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test="@tipo = ordenar">
+                <xsl:when test='@tipo = "ordenar"'>
                     <tr>
                         <td><xsl:value-of select="opcion"/></td>
                     </tr>
