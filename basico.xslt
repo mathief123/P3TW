@@ -6,7 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
     <h2>Examen tocho</h2>
 
-      </tr>
+
       <xsl:for-each select="examen/pregunta">
       <xsl:sort select="artist"/>
         <table border="1">
@@ -30,7 +30,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td bgcolor="#ff58ff"><xsl:value-of select="@tema"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test='@tema = "4'>
+                <xsl:when test='@tema = "4"'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
                         <td bgcolor="#ffeeff"><xsl:value-of select="@tema"/></td>
