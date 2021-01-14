@@ -79,11 +79,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test='especifica/bool'>
-                    <tr>
-                        <td></td>
-                    </tr>
-                </xsl:when>
                 <xsl:when test='especifica/ordenar'>
                     <tr>
                         <td><xsl:value-of select="opcion"/></td>
