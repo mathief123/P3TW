@@ -4,93 +4,127 @@
 <examen>
 
     <!--Pregunta numerica-->
-    <pregunta tipo="num" tema="2">
+    <pregunta  tema="2">
         <enunciado>¿Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
-        <respuesta acept="num" minimo='0' maximo='9'></respuesta>
+        <especifico>    
+            <num acept="num" minimo='0' maximo='9'></num>
+        </especifico>
     </pregunta>
 
     <pregunta tipo="num" tema="2">
-        <enunciado>¿Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--Respuesta: 1-->
-        <respuesta acept="num" minimo='0' maximo='9'></respuesta>
+        <enunciado>¿Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--num: 1-->
+        <especifico>
+            <num acept="num" minimo='0' maximo='9'></num>
+        </especifico>
     </pregunta>
 
     <pregunta tipo="num" tema="2">
-        <enunciado>¿Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--Respuesta: 7(Doctype, abrir y cerrar html, body y head)-->
-        <respuesta acept="num" minimo='0' maximo='9'></respuesta>
+        <enunciado>¿Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--num: 7(Doctype, abrir y cerrar html, body y head)-->
+        <especifico>
+            <num acept="num" minimo='0' maximo='9'></num>
+        </especifico>
     </pregunta>
 
     <!--Pregunta libre-->
 
     <pregunta tipo="libre" tema="4">
         <enunciado>¿Como defines una imagen en un documento xhtml?</enunciado><!--<img></img>-->
-        <respuesta acept="libre"></respuesta>
+        <especifico>
+            <libre columna="5" fila="2"></libre>
+        </especifico>
     </pregunta>
 
     <pregunta tipo="libre" tema="4">
         <enunciado>¿Cuales son los tres tipos de xhtml que hay?</enunciado><!--Strict, transitional, frameset-->
-        <respuesta acept="libre"></respuesta>
+        <especifico>
+            <libre columna="5" fila="2"></libre>
+        </especifico>
     </pregunta>
 
     <pregunta tipo="libre" tema="3">
         <enunciado>Nombra 3 tipos de selectores en css</enunciado><!--Etiquetas, clase, id-->
-        <respuesta acept="libre"></respuesta>
+        <especifico>
+            <libre columna="5" fila="2"></libre>
+        </especifico>
     </pregunta>
 
     <!--Pregunta test-->
 
-    <pregunta tipo="testU" tema="3">
+    <pregunta  tema="3">
         <enunciado>¿Que significa CSS?</enunciado>
-            <opcion> Creative Style Sheets</opcion>
-            <opcion tipo="correcta">Cascading Style Sheets</opcion>
-            <opcion>Computer Style Sheets</opcion>
-            <opcion>Colorful Style Sheets</opcion>
+            <especifico>
+                <test tipo="U">
+                    <opcion> Creative Style Sheets</opcion>
+                    <opcion tipo="correcta">Cascading Style Sheets</opcion>
+                    <opcion>Computer Style Sheets</opcion>
+                    <opcion>Colorful Style Sheets</opcion>
+                </test >
+            </especifico>
     </pregunta>
 
-    <pregunta tipo="testU" tema="5">
+    <pregunta  tema="5">
         <enunciado>¿Dentro de que elemento html ponemos el JS?</enunciado>
-            <opcion> &lt;javascript&gt;</opcion>
-            <opcion>&lt;scripting&gt;</opcion>
-            <opcion tipo="correcta">&lt;script&gt;</opcion>
-            <opcion>&lt;js&gt;</opcion>
+            <especifico>
+                <test tipo="M">
+                    <opcion> &lt;javascript&gt;</opcion>
+                    <opcion>&lt;scripting&gt;</opcion>
+                    <opcion tipo="correcta">&lt;script&gt;</opcion>
+                    <opcion>&lt;js&gt;</opcion>
+                </test>
+            </especifico>
     </pregunta>
             
-    <pregunta tipo="testM" tema="6">
+    <pregunta  tema="6">
         <enunciado>Indica cual de estos atributos son validos en html5</enunciado>
-            <opcion> &lt;a/&gt;</opcion>
-            <opcion tipo="correcta">href</opcion>
-            <opcion>referencia</opcion>
-            <opcion tipo="correcta">src</opcion>
-
+            <especifico>
+                <test tipo="M">
+                    <opcion> &lt;a/&gt;</opcion>
+                    <opcion tipo="correcta">href</opcion>
+                    <opcion>referencia</opcion>
+                    <opcion tipo="correcta">src</opcion>
+                </test>
+            </especifico>
     </pregunta>
 
     <!--Pregunta booleana-->
 
-    <pregunta tipo="boolY" tema="2">
+    <pregunta  tema="2">
         <enunciado>¿Un enlace a la pagina index.html se define con &lt;a href="index.html>&lt;/a>?</enunciado><!--Etiquetas, clase, id-->
+        <especifico><bool sol="v"></bool></especifico>
     </pregunta>
 
-    <pregunta tipo="boolN" tema="2">
+    <pregunta  tema="2">
         <enunciado>¿Un documento html se puede enlazar solo con un docunento css?</enunciado>
+        <especifico><bool sol="f"></bool></especifico>
     </pregunta>
 
-    <pregunta tipo="boolY" tema="1">
+    <pregunta  tema="1">
         <enunciado>¿Es correcto decir que los clientes son dispositivos que ejecutan un software denominado navegador(browser) de WWW?</enunciado>
+        <especifico><bool sol="v"></bool></especifico>
     </pregunta>
 
 <!--Pregunta ordenar-->
 
 
-    <pregunta tipo="ordenar" tema="2">
+    <pregunta  tema="2">
         <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
-        <opcion orden='1'> &lt;html&gt;</opcion>
-        <opcion orden='2'>&lt;head&gt;</opcion>
-        <opcion orden='3'>&lt;body&gt;</opcion>
+        <especifico>        
+            <orden>    
+                <opcion orden='1'> &lt;html&gt;</opcion>
+                <opcion orden='2'>&lt;head&gt;</opcion>
+                <opcion orden='3'>&lt;body&gt;</opcion>
+            <orden>
+        </especifico>
     </pregunta>
 
-    <pregunta tipo="ordenar" tema="5">
+    <pregunta  tema="5">
         <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
-        <opcion orden='1'> Saab</opcion>
-        <opcion orden='2'>Volvo</opcion>
-        <opcion orden='3'>BMW</opcion>
+         <especifico>       
+            <orden>    
+                <opcion orden='1'> Saab</opcion>
+                <opcion orden='2'>Volvo</opcion>
+                <opcion orden='3'>BMW</opcion>
+            </orden>
+        </especifico>
     </pregunta>
 </examen>
