@@ -7,41 +7,41 @@
     <pregunta  tema="2">
         <enunciado>¿Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
         <especifico>    
-            <num acept="num" minimo='0' maximo='9'></num>
+            <num  minimo='0' maximo=""></num>
         </especifico>
     </pregunta>
 
-    <pregunta tipo="num" tema="2">
+    <pregunta tema="2">
         <enunciado>¿Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--num: 1-->
         <especifico>
-            <num acept="num" minimo='0' maximo='9'></num>
+            <num  minimo="0" maximo="9"></num>
         </especifico>
     </pregunta>
 
-    <pregunta tipo="num" tema="2">
+    <pregunta  tema="2">
         <enunciado>¿Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--num: 7(Doctype, abrir y cerrar html, body y head)-->
         <especifico>
-            <num acept="num" minimo='0' maximo='9'></num>
+            <num  minimo="0" maximo="9"></num>
         </especifico>
     </pregunta>
 
     <!--Pregunta libre-->
 
-    <pregunta tipo="libre" tema="4">
+    <pregunta  tema="4">
         <enunciado>¿Como defines una imagen en un documento xhtml?</enunciado><!--<img></img>-->
         <especifico>
             <libre columna="5" fila="2"></libre>
         </especifico>
     </pregunta>
 
-    <pregunta tipo="libre" tema="4">
+    <pregunta  tema="4">
         <enunciado>¿Cuales son los tres tipos de xhtml que hay?</enunciado><!--Strict, transitional, frameset-->
         <especifico>
             <libre columna="5" fila="2"></libre>
         </especifico>
     </pregunta>
 
-    <pregunta tipo="libre" tema="3">
+    <pregunta  tema="3">
         <enunciado>Nombra 3 tipos de selectores en css</enunciado><!--Etiquetas, clase, id-->
         <especifico>
             <libre columna="5" fila="2"></libre>
@@ -109,22 +109,22 @@
     <pregunta  tema="2">
         <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
         <especifico>        
-            <orden>    
+            <ordenar>    
                 <opcion orden='1'> &lt;html&gt;</opcion>
                 <opcion orden='2'>&lt;head&gt;</opcion>
                 <opcion orden='3'>&lt;body&gt;</opcion>
-            <orden>
+            </ordenar>
         </especifico>
     </pregunta>
 
     <pregunta  tema="5">
         <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
          <especifico>       
-            <orden>    
+            <ordenar>    
                 <opcion orden='1'> Saab</opcion>
                 <opcion orden='2'>Volvo</opcion>
                 <opcion orden='3'>BMW</opcion>
-            </orden>
+            </ordenar>
         </especifico>
     </pregunta>
 </examen>

@@ -60,7 +60,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td><xsl:value-of select="respuesta"/></td>
                     </tr>
                 </xsl:when>
-                <xsl:when test='especifica/test"'>
+                <xsl:when test='especifica/test'>
                     <tr>
                         <td><xsl:value-of select="opcion"/></td>
                     </tr>
