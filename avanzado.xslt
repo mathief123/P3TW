@@ -95,8 +95,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             Escriba su respuesta
         </textarea>
     </xsl:template>
-    <xsl:template match="especifico/test">
-
+    <xsl:template match="unica">
+        <input type="checkbox">
+            <xsl:attribute name="value">
+                <xsl:value-of select="opcion"/>
+            </xsl:attribute>
+        </input>
     </xsl:template>
 
+    <xsl:template match="multiple">
+        <input type="radio">
+            <xsl:attribute name="value">
+                <xsl:value-of select="opcion"/>
+            </xsl:attribute>
+            <xsl:attribute name="name">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+        </input>
+    </xsl:template>
 </xsl:stylesheet>

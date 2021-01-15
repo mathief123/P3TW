@@ -4,21 +4,21 @@
 <examen>
 
     <!--Pregunta numerica-->
-    <pregunta  tema="2">
+    <pregunta  tema="2" id="a">
         <enunciado>¿Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
         <especifico>    
             <num  minimo='0' maximo=""></num>
         </especifico>
     </pregunta>
 
-    <pregunta tema="2">
+    <pregunta tema="2" id="b">
         <enunciado>¿Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--num: 1-->
         <especifico>
             <num  minimo="0" maximo="9"></num>
         </especifico>
     </pregunta>
 
-    <pregunta  tema="2">
+    <pregunta  tema="2" id="c"> 
         <enunciado>¿Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--num: 7(Doctype, abrir y cerrar html, body y head)-->
         <especifico>
             <num  minimo="0" maximo="9"></num>
@@ -27,21 +27,21 @@
 
     <!--Pregunta libre-->
 
-    <pregunta  tema="4">
+    <pregunta  tema="4" id="d">
         <enunciado>¿Como defines una imagen en un documento xhtml?</enunciado><!--<img></img>-->
         <especifico>
             <libre columna="5" fila="2"></libre>
         </especifico>
     </pregunta>
 
-    <pregunta  tema="4">
+    <pregunta  tema="4" id="e">
         <enunciado>¿Cuales son los tres tipos de xhtml que hay?</enunciado><!--Strict, transitional, frameset-->
         <especifico>
             <libre columna="5" fila="2"></libre>
         </especifico>
     </pregunta>
 
-    <pregunta  tema="3">
+    <pregunta  tema="3" id="f">
         <enunciado>Nombra 3 tipos de selectores en css</enunciado><!--Etiquetas, clase, id-->
         <especifico>
             <libre columna="5" fila="2"></libre>
@@ -50,7 +50,7 @@
 
     <!--Pregunta test-->
 
-    <pregunta  tema="3">
+    <pregunta  tema="3" id="g">
         <enunciado>¿Que significa CSS?</enunciado>
             <especifico>
                 <test tipo="U">
@@ -62,7 +62,7 @@
             </especifico>
     </pregunta>
 
-    <pregunta  tema="5">
+    <pregunta  tema="5" id="h">
         <enunciado>¿Dentro de que elemento html ponemos el JS?</enunciado>
             <especifico>
                 <test tipo="M">
@@ -74,7 +74,7 @@
             </especifico>
     </pregunta>
             
-    <pregunta  tema="6">
+    <pregunta  tema="6" id="i">
         <enunciado>Indica cual de estos atributos son validos en html5</enunciado>
             <especifico>
                 <test tipo="M">
@@ -88,17 +88,17 @@
 
     <!--Pregunta booleana-->
 
-    <pregunta  tema="2">
+    <pregunta  tema="2" id="l">
         <enunciado>¿Un enlace a la pagina index.html se define con &lt;a href="index.html>&lt;/a>?</enunciado><!--Etiquetas, clase, id-->
         <especifico><bool sol="v"></bool></especifico>
     </pregunta>
 
-    <pregunta  tema="2">
+    <pregunta  tema="2" id="m">
         <enunciado>¿Un documento html se puede enlazar solo con un docunento css?</enunciado>
         <especifico><bool sol="f"></bool></especifico>
     </pregunta>
 
-    <pregunta  tema="1">
+    <pregunta  tema="1" id="n">
         <enunciado>¿Es correcto decir que los clientes son dispositivos que ejecutan un software denominado navegador(browser) de WWW?</enunciado>
         <especifico><bool sol="v"></bool></especifico>
     </pregunta>
@@ -106,7 +106,7 @@
 <!--Pregunta ordenar-->
 
 
-    <pregunta  tema="2">
+    <pregunta  tema="2" id="o">
         <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
         <especifico>        
             <ordenar>    
@@ -117,7 +117,7 @@
         </especifico>
     </pregunta>
 
-    <pregunta  tema="5">
+    <pregunta  tema="5" id="p">
         <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
          <especifico>       
             <ordenar>    
