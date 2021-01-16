@@ -7,7 +7,7 @@
     <pregunta  tema="2" id="a">
         <enunciado>¿Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
         <especifico>    
-            <num  minimo='0' maximo=""></num>
+            <num  minimo='0' maximo="9"></num>
         </especifico>
     </pregunta>
 
