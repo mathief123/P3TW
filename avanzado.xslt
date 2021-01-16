@@ -37,12 +37,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                     <tr>
                                         <td><xsl:value-of select="enunciado"/></td>
                                     </tr>
-                                    <!--<xsl:if test='@tipo="M"'>-->
-                                        <xsl:apply-templates select="especifico/test/opcion"/>
-                                    <!--</xsl:if>-->
-                                    <!--<xsl:if test='@tipo="U"'>
-                                        <xsl:apply-templates select="especifico/test/opcion"/>
-                                    </xsl:if>-->
+                                    <xsl:choose>
+                                        <xsl:when test='especifico/test/@tipo="M"'>
+                                            <xsl:apply-templates select="especifico/test"/>
+                                        </xsl:when>
+                                        <xsl:when test='especifico/test/@tipo="U"'>
+                                            <xsl:apply-templates select="especifico/test/opcion"/>
+                                        </xsl:when>
+                                    </xsl:choose>    
                                 </table>
                             </xsl:when>
                             <xsl:when test='especifico/bool'>
@@ -105,24 +107,29 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             Escriba su respuesta
         </textarea>
     </xsl:template>
-    <xsl:template match="unica">
-        <tr>
-            <td><xsl:value-of select="."/></td>
-                <input type="radio">
-                    <xsl:attribute name="value">
-                        <xsl:value-of select="opcion"/>
-                    </xsl:attribute>
-                </input>
-        </tr>                
+
+    <xsl:template match="especifico/test">
+        <xsl:for-each select="opcion">
+            <tr>
+                <td><xsl:value-of select="."/></td>
+                <td><input type='checkbox' /></td>
+            </tr>
+        </xsl:for-each>
     </xsl:template>
 
     <xsl:template match="especifico/test/opcion">
         <tr>
             <td><xsl:value-of select="."/></td>
-            <td><input type='checkbox' /></td>
+            <td><input type='radio' >
+                    <xsl:attribute name="value">
+                        <xsl:value-of select="opcion"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="name">
+                        <xsl:value-of select="../../../@id"/>
+                    </xsl:attribute>
+                </input>
+            </td>
         </tr>
     </xsl:template>
-
-
 </xsl:stylesheet>
 
