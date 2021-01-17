@@ -1,4 +1,4 @@
-<!ELEMENT examen (pregunta)+>
+<!ELEMENT cuestionario (pregunta)+>
 <!ELEMENT pregunta (enunciado ,especifico) >
 <!ELEMENT especifico (num|test|libre|ordenar|bool)  >
 <!ELEMENT num (#PCDATA)>

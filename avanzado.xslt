@@ -9,7 +9,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             </head>
             <body>
                 <form>
-                    <xsl:for-each select="examen/pregunta">
+                    <xsl:for-each select="cuestionario/pregunta">
                         <br/>
                         <xsl:choose>
                             <xsl:when test='especifico/num'>

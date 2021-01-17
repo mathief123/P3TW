@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="cuestionario" type="tipoCuestionario"/>
+
+<xsd:complexType name="tipoCuestionario">
+    <xsd:sequence>
+        <xsd:element name="pregunta" type="tipoPregunta" minOccurs="0" maxOccurs="200"/>
+    </xsd:sequence>
+        
+
+
+</xsd:complexType>
+
+<xsd:complexType name="tipoPregunta">
+    <xsd:sequence>
+        <xsd:element name="enunciado" type="xsd:string"/>
+        <xsd:element name="especifico" type="tipoEspecifico"/>
+    </xsd:sequence>
+    <xsd:attribute name="tema" type="temario" use="required"/>
+    <xsd:attribute name="id" type="xsd:string" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="tipoEspecifico">
+    <xsd:choice>
+        <xsd:element name="num" type="tipoNum"/>
+        <xsd:element name="libre" type="tipoLibre"/>
+
+        <xsd:element name="test" type="tipoTest"/>
+        <xsd:element name="bool" type="tipoBool"/>
+        <xsd:element name="ordenar" type="tipoOrd" />
+    </xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="tipoNum">
+    <xsd:attribute name="minimo" type="xsd:int" use="required"/>
+    <xsd:attribute name="maximo" type="xsd:int" use="required"/>
+</xsd:complexType>
+
+
+<xsd:complexType name="tipoLibre">
+    <xsd:attribute name="columna" type="xsd:int" use="required"/>
+    <xsd:attribute name="fila" type="xsd:int" use="required"/>
+</xsd:complexType>
+
+
+<xsd:complexType name="tipoTest">
+    <xsd:sequence>
+        <xsd:element name="opcion" type="tipoOpcion" minOccurs="0" maxOccurs="200"/>
+    </xsd:sequence>
+    <xsd:attribute name="tipo" type="tipoTipo" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="tipoBool">
+    <xsd:attribute name="sol" type="xsd:string" use="optional"/>
+</xsd:complexType>
+
+<xsd:complexType name="tipoOrd">
+    <xsd:sequence>
+        <xsd:element name="opcion" type="tipoOpcion" minOccurs="0" maxOccurs="200" />
+    </xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:complexType name="tipoOpcion">
+    <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+            <xsd:attribute name="tipo" type="xsd:string" use="optional"/>
+            <xsd:attribute name="orden" type="xsd:int" use="optional"/>
+
+        </xsd:extension>
+    </xsd:simpleContent>
+</xsd:complexType>
+
+<xsd:simpleType name="temario">
+    <xsd:restriction base="xsd:int">
+        <xsd:minInclusive value="1"/>
+        <xsd:maxInclusive value="6"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="tipoTipo">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="M"/>
+        <xsd:enumeration value="U"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+
+
+</xsd:schema>

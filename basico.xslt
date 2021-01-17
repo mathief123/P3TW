@@ -7,7 +7,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <h2>Examen tocho</h2>
 
 
-      <xsl:for-each select="examen/pregunta">
+      <xsl:for-each select="cuestionario/pregunta">
       <xsl:sort select="@tema"/>
         <table border="1">
             
