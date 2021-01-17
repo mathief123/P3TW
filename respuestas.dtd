@@ -1,0 +1,15 @@
+<!ELEMENT respuestas (respuesta)+>
+<!ELEMENT respuesta (num|testU|testM|libre|ordenar|bool)+>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT libre (#PCDATA)>
+<!ELEMENT testU (opcion)>
+<!ELEMENT testM (opcion)+>
+<!ELEMENT bool (#PCDATA)>
+<!ELEMENT ordenar (opcion1,opcion2,opcion3)>
+<!ELEMENT enunciado (#PCDATA)>
+<!ELEMENT opcion (#PCDATA)>
+<!ELEMENT opcion1 (#PCDATA)>
+<!ELEMENT opcion2 (#PCDATA)>
+<!ELEMENT opcion3 (#PCDATA)>
+
+<!ATTLIST respuesta id ID #REQUIRED>
