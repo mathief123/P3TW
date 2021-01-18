@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="examen.css"?>
-<!DOCTYPE cuestionario SYSTEM "gramatica.dtd">
-<cuestionario>
+<!DOCTYPE cuestionario>
+<!--<cuestionario>-->
     <!-- Descomentar lo siguiente y quitar el SYSTEM "gramatica.dtd" y el elemento raiz cuestionario  para SCHEMA
-    <cuestionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    --><cuestionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="gramatica.xsd">
-    -->
+    
 
     <!--Pregunta numerica-->
     <pregunta  tema="2" id="a">

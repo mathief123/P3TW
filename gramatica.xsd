@@ -18,7 +18,11 @@
         <xsd:element name="especifico" type="tipoEspecifico"/>
     </xsd:sequence>
     <xsd:attribute name="tema" type="temario" use="required"/>
-    <xsd:attribute name="id" type="xsd:string" use="required"/>
+    <xsd:attribute name="id" type="xsd:ID" use="required"/>
+    <xsd:attribute name="fecha" type="xsd:date" use="optional"/>
+    <xsd:attribute name="Autor" type="xsd:string" use="optional"/>
+
+
 </xsd:complexType>
 
 <xsd:complexType name="tipoEspecifico">
