@@ -25,13 +25,8 @@ opcion {
 textarea {
     vertical-align: top;
     width: 300px;
-    height: 400px;
 }
 
-table {
-    border:10px;
-}
-
-table enunciado{
-    background-color: aqua;
-}
+table ,td{
+    border: 1px solid black;
+  }

@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
             <head>
-            <link rel="styleheet" href="examen.css" type="text/css"/>
+            <link rel="stylesheet" href="examen.css" type="text/css"/>
             <title>Examen</title>
             </head>
             <body>
@@ -25,7 +25,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <xsl:when test='especifico/libre'>
                                 <table>
                                     <tr>
-                                        <td><xsl:value-of select="enunciado"/></td>
+                                        <td bgcolor="#a0a0a0"><xsl:value-of select="enunciado"/></td>
                                     </tr>
                                     <tr>
                                         <td><xsl:apply-templates select="especifico/libre"/></td>
@@ -35,7 +35,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <xsl:when test='especifico/test'>
                                 <table>
                                     <tr>
-                                        <td><xsl:value-of select="enunciado"/></td>
+                                        <td colspan="2" bgcolor="#a0a0a0"><xsl:value-of select="enunciado"/></td>
                                     </tr>
                                     <xsl:choose>
                                         <xsl:when test='especifico/test/@tipo="M"'>
@@ -50,7 +50,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <xsl:when test='especifico/bool'>
                                 <table>
                                     <tr>
-                                        <td><xsl:value-of select="enunciado"/></td>
+                                        <td colspan="2" bgcolor="#a0a0a0"><xsl:value-of select="enunciado"/></td>
                                     </tr>
                                     <tr>
                                         <td>Si</td>
