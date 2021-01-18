@@ -2,6 +2,7 @@ enunciado {
     font-family: Verdana;
     font-size: 13 px;
     color: Black;
+    background-color: #a0a0a0;
 }
 
 opcion {
@@ -19,4 +20,18 @@ opcion {
     display: list-item;
     list-style: disc inside;
     margin-left: 20px;
+}
+
+textarea {
+    vertical-align: top;
+    width: 300px;
+    height: 400px;
+}
+
+table {
+    border:10px;
+}
+
+table enunciado{
+    background-color: aqua;
 }

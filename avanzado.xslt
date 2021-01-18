@@ -4,7 +4,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
             <head>
-            <link href="style.css" rel="examen.css" type="text/css"/>
+            <link rel="styleheet" href="examen.css" type="text/css"/>
             <title>Examen</title>
             </head>
             <body>
@@ -13,9 +13,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <br/>
                         <xsl:choose>
                             <xsl:when test='especifico/num'>
-                                <table>
+                                <table border="1">
                                     <tr>
-                                        <td><xsl:value-of select="enunciado"/></td>
+                                        <td bgcolor="#a0a0a0"><xsl:value-of select="enunciado"/></td>
                                     </tr>
                                     <tr>
                                         <td><xsl:apply-templates select="especifico/num"/> </td>
@@ -97,7 +97,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:template>
 
     <xsl:template match="especifico/libre">
-        <textarea>
+        <textarea width="300px">
             <xsl:attribute name="rows">
                 <xsl:value-of select="@fila"/>
             </xsl:attribute>

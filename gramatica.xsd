@@ -20,7 +20,8 @@
     <xsd:attribute name="tema" type="temario" use="required"/>
     <xsd:attribute name="id" type="xsd:ID" use="required"/>
     <xsd:attribute name="fecha" type="xsd:date" use="optional"/>
-    <xsd:attribute name="Autor" type="xsd:string" use="optional"/>
+    <xsd:attribute name="autor" type="xsd:string" use="required"/>
+    <xsd:attribute name="apellido" type="xsd:string" use="required"/>
 
 
 </xsd:complexType>

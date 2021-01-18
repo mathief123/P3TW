@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="examen.css"?>
-<!DOCTYPE cuestionario SYSTEM "gramatica.dtd">
-<cuestionario>
-    <!-- Descomentar lo siguiente y quitar el SYSTEM "gramatica.dtd" y el elemento raiz cuestionario  para SCHEMA
+<!DOCTYPE cuestionario >
+<!--<cuestionario>-->
+    <!-- Descomentar lo siguiente y quitar el SYSTEM "gramatica.dtd" y el elemento raiz cuestionario  para SCHEMA-->
     <cuestionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
+xsi:noNamespaceSchemaLocation="gramatica.xsd">
     
 
     <!--Pregunta numerica-->
-    <pregunta  tema="2" id="a" autor="Matteo Fecci" fecha="25/03/2019">
+    <pregunta  tema="2" id="a" autor="Matteo" apellido="Fecci" fecha="2019-03-25">
         <enunciado>¿Cuantos niveles de encabezado se definen en html?</enunciado><!--Respuesta: 6-->
         <especifico>    
             <num  minimo="0" maximo="9"></num>
         </especifico>
     </pregunta>
 
-    <pregunta tema="2" id="b" autor="Fran Quiles" fecha="25/03/2019">
+    <pregunta tema="2" id="b" autor="Fran" apellido="Quiles" fecha="2019-03-25">
         <enunciado>¿Cuantas veces se puede repetir el mismo id en un documento html?</enunciado><!--num: 1-->
         <especifico>
             <num  minimo="0" maximo="9"></num>
         </especifico>
     </pregunta>
 
-    <pregunta  tema="2" id="c"> 
+    <pregunta  tema="2" id="c" autor="Matteo" apellido="Fecci" fecha="2019-03-25"> 
         <enunciado>¿Cual es el minimo numero de etiquetas que hacen falta para un documento html?(contando abrir y cerrar cada una como 2)</enunciado><!--num: 7(Doctype, abrir y cerrar html, body y head)-->
         <especifico>
             <num  minimo="0" maximo="9"></num>
@@ -31,21 +31,21 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
 
     <!--Pregunta libre-->
 
-    <pregunta  tema="4" id="d">
+    <pregunta  tema="4" id="d" autor="Fran" apellido="Quiles" fecha="2019-03-25">
         <enunciado>¿Como defines una imagen en un documento xhtml?</enunciado><!--<img></img>-->
         <especifico>
             <libre columna="5" fila="2"></libre>
         </especifico>
     </pregunta>
 
-    <pregunta  tema="4" id="e">
+    <pregunta  tema="4" id="e" autor="Matteo" apellido="Fecci" fecha="2019-03-25">
         <enunciado>¿Cuales son los tres tipos de xhtml que hay?</enunciado><!--Strict, transitional, frameset-->
         <especifico>
             <libre columna="5" fila="2"></libre>
         </especifico>
     </pregunta>
 
-    <pregunta  tema="3" id="f">
+    <pregunta  tema="3" id="f" autor="Fran" apellido="Quiles" >
         <enunciado>Nombra 3 tipos de selectores en css</enunciado><!--Etiquetas, clase, id-->
         <especifico>
             <libre columna="5" fila="2"></libre>
@@ -54,7 +54,7 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
 
     <!--Pregunta test-->
 
-    <pregunta  tema="3" id="g">
+    <pregunta  tema="3" id="g" autor="Matteo" apellido="Fecci" fecha="2019-03-25">
         <enunciado>¿Que significa CSS?</enunciado>
             <especifico>
                 <test tipo="U">
@@ -66,7 +66,7 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
             </especifico>
     </pregunta>
 
-    <pregunta  tema="5" id="h">
+    <pregunta  tema="5" id="h" autor="Matteo" apellido="Fecci" >
         <enunciado>¿Dentro de que elemento html ponemos el JS?</enunciado>
             <especifico>
                 <test tipo="M">
@@ -78,7 +78,7 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
             </especifico>
     </pregunta>
             
-    <pregunta  tema="6" id="i">
+    <pregunta  tema="6" id="i" autor="Fran" apellido="Quiles" fecha="2019-03-25">
         <enunciado>Indica cual de estos atributos son validos en html5</enunciado>
             <especifico>
                 <test tipo="M">
@@ -92,17 +92,17 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
 
     <!--Pregunta booleana-->
 
-    <pregunta  tema="2" id="l">
+    <pregunta  tema="2" id="l" autor="Matteo" apellido="Fecci" fecha="2019-03-25">
         <enunciado>¿Un enlace a la pagina index.html se define con &lt;a href="index.html>&lt;/a>?</enunciado><!--Etiquetas, clase, id-->
         <especifico><bool sol="v"></bool></especifico>
     </pregunta>
 
-    <pregunta  tema="2" id="m">
+    <pregunta  tema="2" id="m" autor="Fran" apellido="Quiles" fecha="2019-03-25">
         <enunciado>¿Un documento html se puede enlazar solo con un docunento css?</enunciado>
         <especifico><bool sol="f"></bool></especifico>
     </pregunta>
 
-    <pregunta  tema="1" id="n">
+    <pregunta  tema="1" id="n" autor="Matteo" apellido="Fecci" fecha="2019-03-25">
         <enunciado>¿Es correcto decir que los clientes son dispositivos que ejecutan un software denominado navegador(browser) de WWW?</enunciado>
         <especifico><bool sol="v"></bool></especifico>
     </pregunta>
@@ -110,7 +110,7 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
 <!--Pregunta ordenar-->
 
 
-    <pregunta  tema="2" id="o">
+    <pregunta  tema="2" id="o" autor="Fran" apellido="Quiles" fecha="2019-03-25">
         <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
         <especifico>        
             <ordenar>    
@@ -121,7 +121,7 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">-->
         </especifico>
     </pregunta>
 
-    <pregunta  tema="5" id="p">
+    <pregunta  tema="5" id="p" autor="Matteo" apellido="Fecci" fecha="2019-03-25">
         <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
          <especifico>       
             <ordenar>    

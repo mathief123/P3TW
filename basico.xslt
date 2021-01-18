@@ -15,7 +15,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <xsl:when test='@tema = "1"'>
                     <tr>
                         <td><xsl:value-of select="enunciado"/></td>
-                        <td bgcolor="#fa00ff"><xsl:value-of select="@tema"/></td>
+                        <td bgcolor="#aa58ff"><xsl:value-of select="@tema"/></td>
                     </tr>
                 </xsl:when>
                 <xsl:when test='@tema = "2"'>
