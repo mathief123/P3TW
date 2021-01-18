@@ -1,10 +1,11 @@
-<!ELEMENT respuestas (respuesta)+>
+<!ELEMENT respuestas (pregunta)+>
+<!ELEMENT pregunta (respuesta)+>
 <!ELEMENT respuesta (num|testU|testM|libre|ordenar|bool)+>
 <!ELEMENT num (#PCDATA)>
 <!ELEMENT libre (#PCDATA)>
 <!ELEMENT testU (opcion)>
 <!ELEMENT testM (opcion)+>
-<!ELEMENT bool (#PCDATA)>
+<!ELEMENT bool EMPTY>
 <!ELEMENT ordenar (opcion1,opcion2,opcion3)>
 <!ELEMENT enunciado (#PCDATA)>
 <!ELEMENT opcion (#PCDATA)>
@@ -12,4 +13,6 @@
 <!ELEMENT opcion2 (#PCDATA)>
 <!ELEMENT opcion3 (#PCDATA)>
 
-<!ATTLIST respuesta id ID #REQUIRED>
+<!ATTLIST respuestas alumno CDATA #REQUIRED>
+<!ATTLIST pregunta id ID #REQUIRED>
+<!ATTLIST bool valor (v|f) #REQUIRED>

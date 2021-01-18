@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="examen.css"?>
+<!DOCTYPE respuestas SYSTEM "respuestas.dtd">
+<respuestas alumno="Antonio">
+    <!-- Descomentar lo siguiente y quitar el SYSTEM "gramatica.dtd" y el elemento raiz cuestionario  para SCHEMA
+    <cuestionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="respuestas.xsd">-->
+    <pregunta id="a">
+        <respuesta >
+            <libre>HTML</libre>
+        </respuesta>
+
+    </pregunta>
+
+    <pregunta id="b">
+        <respuesta >
+            <num>47</num>
+        </respuesta>
+    </pregunta>
+
+    <pregunta id="c">
+        <respuesta >
+            <testU>
+                <opcion>HTML</opcion>
+            </testU>
+        </respuesta>
+    </pregunta>
+
+    <pregunta id="d">
+        <respuesta >
+            <testM>
+                <opcion>HTML</opcion>
+                <opcion>http</opcion>
+            </testM>
+        </respuesta>
+    </pregunta>
+
+    <pregunta id="e">
+        <respuesta >
+            <ordenar>
+                <opcion1>HTML</opcion1>
+                <opcion2>http</opcion2>
+                <opcion3>xml</opcion3>
+            </ordenar>
+        </respuesta>
+    </pregunta>
+
+    <pregunta id="f">
+        <respuesta >
+            <bool valor="v"/>
+        </respuesta>
+    </pregunta>
+</respuestas>

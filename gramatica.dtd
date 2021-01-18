@@ -10,7 +10,9 @@
 <!ELEMENT opcion (#PCDATA)>
 <!-- -->
 <!ATTLIST pregunta tema (1|2|3|4|5|6) #REQUIRED
-                id ID #REQUIRED>
+                id ID #REQUIRED
+                autor CDATA #IMPLIED
+                fecha CDATA #IMPLIED>
 <!ATTLIST opcion tipo (correcta|incorrecta)  "incorrecta">
 <!ATTLIST bool sol (v|f) #REQUIRED>
 <!ATTLIST test tipo (U|M) #REQUIRED>
