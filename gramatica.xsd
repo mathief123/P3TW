@@ -60,7 +60,7 @@
 
 <xsd:complexType name="tipoOrd">
     <xsd:sequence>
-        <xsd:element name="opcion" type="tipoOpcion" minOccurs="0" maxOccurs="200" />
+        <xsd:element name="opcionO" type="tipoOpcionO" minOccurs="0" maxOccurs="200" />
     </xsd:sequence>
 </xsd:complexType>
 
@@ -69,11 +69,21 @@
     <xsd:simpleContent>
         <xsd:extension base="xsd:string">
             <xsd:attribute name="tipo" type="xsd:string" use="optional"/>
+        </xsd:extension>
+    </xsd:simpleContent>
+</xsd:complexType>
+
+<xsd:complexType name="tipoOpcionO">
+    <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+            <xsd:attribute name="tipo" type="xsd:string" use="optional"/>
             <xsd:attribute name="orden" type="xsd:int" use="optional"/>
 
         </xsd:extension>
     </xsd:simpleContent>
 </xsd:complexType>
+
+
 
 <xsd:simpleType name="temario">
     <xsd:restriction base="xsd:int">

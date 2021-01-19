@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="examen.css"?>
-<!DOCTYPE cuestionario >
-<!--<cuestionario>-->
-    <!-- Descomentar lo siguiente y quitar el SYSTEM "gramatica.dtd" y el elemento raiz cuestionario  para SCHEMA-->
-    <cuestionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="gramatica.xsd">
+<!DOCTYPE cuestionario SYSTEM "gramatica.dtd"> 
+<cuestionario>
+   <!--Descomentar lo siguiente y quitar el SYSTEM "gramatica.dtd" y el elemento raiz cuestionario  para SCHEMA-->
+    <!-- <cuestionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gramatica.xsd"> -->
     
 
     <!--Pregunta numerica-->
@@ -114,9 +113,9 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">
         <enunciado>Ordena estas etiquetas en orden de inserción</enunciado>
         <especifico>        
             <ordenar>    
-                <opcion orden='1'> &lt;html&gt;</opcion>
-                <opcion orden='2'>&lt;head&gt;</opcion>
-                <opcion orden='3'>&lt;body&gt;</opcion>
+                <opcionO orden='1'> &lt;html&gt;</opcionO>
+                <opcionO orden='2'>&lt;head&gt;</opcionO>
+                <opcionO orden='3'>&lt;body&gt;</opcionO>
             </ordenar>
         </especifico>
     </pregunta>
@@ -125,9 +124,9 @@ xsi:noNamespaceSchemaLocation="gramatica.xsd">
         <enunciado>"var cars = ["Saab", "Volvo", "BMW"];   var x=cars.pop(); cars.push("x");" Cual es el orden delarray tras la finalizacion del código</enunciado>
          <especifico>       
             <ordenar>    
-                <opcion orden='1'> Saab</opcion>
-                <opcion orden='2'>Volvo</opcion>
-                <opcion orden='3'>BMW</opcion>
+                <opcionO orden='1'> Saab</opcionO>
+                <opcionO orden='2'>Volvo</opcionO>
+                <opcionO orden='3'>BMW</opcionO>
             </ordenar>
         </especifico>
     </pregunta>
