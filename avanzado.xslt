@@ -112,7 +112,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:for-each select="opcion">
             <tr>
                 <td><xsl:value-of select="."/></td>
-                <td><input type='checkbox' /></td>
+                <td style="width:20px"><input type='checkbox' /></td>
             </tr>
         </xsl:for-each>
     </xsl:template>
