@@ -7,8 +7,6 @@
     <xsd:sequence>
         <xsd:element name="pregunta" type="tipoPregunta" minOccurs="0" maxOccurs="200"/>
     </xsd:sequence>
-        
-
 
 </xsd:complexType>
 

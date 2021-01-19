@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="respuestas" type="tipoRespuestas"/>
+
+<xsd:complexType name="tipoRespuestas">
+    <xsd:sequence>
+        <xsd:element name="pregunta" type="tipoPregunta" minOccurs="0" maxOccurs="200"/>
+    </xsd:sequence>
+    <xsd:attribute name="alumno" type="xsd:string" use="optional"/>
+</xsd:complexType>
+
+<xsd:complexType name="tipoPregunta">
+    <xsd:sequence>
+        <xsd:element name="respuesta" type="tipoRespuesta"/>
+    </xsd:sequence>
+
+    <xsd:attribute name="id" type="xsd:ID" use="required"/>
+</xsd:complexType>
+
+<xsd:complexType name="tipoRespuesta">
+    <xsd:choice>
+        <xsd:element name="num" type="xsd:int"/>
+        <xsd:element name="libre" type="xsd:string"/>
+
+        <xsd:element name="testU" type="tipoUniq"/>
+        <xsd:element name="testM" type="tipoMult"/>
+        <xsd:element name="ordenar" type="tipoOrd" />
+        <xsd:element name="bool" type="tipoBool" />
+    </xsd:choice>
+</xsd:complexType>
+
+
+
+<xsd:complexType name="tipoUniq">
+    <xsd:sequence>
+        <xsd:element name="opcion" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+
+
+<xsd:complexType name="tipoMult">
+    <xsd:sequence>
+        <xsd:element name="opcion" type="xsd:string" minOccurs="0" maxOccurs="200"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:complexType name="tipoOrd">
+    <xsd:sequence>
+        <xsd:element name="opcion1" type="xsd:string"/>
+        <xsd:element name="opcion2" type="xsd:string"/>
+        <xsd:element name="opcion3" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="tipoBool">
+
+    <xsd:attribute name="valor" type="tipoValor" use="required"/>
+
+</xsd:complexType>
+
+
+<xsd:simpleType name="tipoValor">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="v"/>
+        <xsd:enumeration value="f"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+
+</xsd:schema>
