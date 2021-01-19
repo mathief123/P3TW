@@ -76,7 +76,6 @@
 <xsd:complexType name="tipoOpcionO">
     <xsd:simpleContent>
         <xsd:extension base="xsd:string">
-            <xsd:attribute name="tipo" type="xsd:string" use="optional"/>
             <xsd:attribute name="orden" type="xsd:int" use="optional"/>
 
         </xsd:extension>

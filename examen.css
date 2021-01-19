@@ -22,11 +22,18 @@ opcion {
     margin-left: 20px;
 }
 
+opcionO {
+    display: list-item;
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
 textarea {
     vertical-align: top;
     width: 300px;
 }
 
-table ,td{
+table,
+td {
     border: 1px solid black;
-  }
+}

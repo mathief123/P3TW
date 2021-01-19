@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="examen.css"?>
 <!DOCTYPE respuestas>
-<!--<respuestas alumno="Antonio">-->
-    <!-- Descomentar lo siguiente y quitar el SYSTEM "gramatica.dtd" y el elemento raiz cuestionario  para SCHEMA
-    --><respuestas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="respuestas.xsd">
+<!-- <respuestas alumno="Antonio"> -->
+    <!-- Descomentar lo siguiente y quitar el SYSTEM "respuestas.dtd" y el elemento raiz cuestionario  para SCHEMA
+    -->
+    <respuestas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="respuestas.xsd">
+
     <pregunta id="a">
         <respuesta >
             <libre>HTML</libre>
@@ -50,4 +51,17 @@ xsi:noNamespaceSchemaLocation="respuestas.xsd">
             <bool valor="v"/>
         </respuesta>
     </pregunta>
+
+    <pregunta id="g">
+        <respuesta >
+            <libre>CSS</libre>
+        </respuesta>
+    </pregunta>
+
+    <pregunta id="h">
+        <respuesta >
+            <num>7</num>
+        </respuesta>
+    </pregunta>
+
 </respuestas>
